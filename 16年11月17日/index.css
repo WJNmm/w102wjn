@@ -1,0 +1,288 @@
+@charset "UTF-8";
+/*!
+ *
+ * w104
+ *
+*/
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+body {
+    background-color: #d4e4f2;
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+.masthead ul {
+    list-style: none;
+}
+.masthead {
+    background-color: #428bca;
+    height: 60px;
+    margin-bottom: 3rem;
+}
+.container {
+    width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.masthead nav li {
+    float: left;
+    line-height: 60px;
+    position: relative;
+}
+.masthead nav ul::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.masthead nav a {
+    color: #cdddeb;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 22px 20px;
+}
+.masthead nav a:hover, .masthead nav a.active {
+    color: #fff;
+}
+.masthead nav a.active::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    vertical-align: middle;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+}
+/*头部样式*/
+.header {
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2rem;
+}
+.header .title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+.header .description {
+    font-size: 1.1rem;
+    color: #999;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+/*正文部分*/
+.container::after, .row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+/*布局*/
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/*布局宽度*/
+.col-md-1 {
+    width: 8.333333%;
+}
+.col-md-2 {
+    width: 16.666667%;
+}
+.col-md-3 {
+    width: 25%;
+}
+.col-md-4 {
+    width: 33.333333%;
+}
+.col-md-5 {
+    width: 41.666665%;
+}
+.col-md-6 {
+    width: 50%;
+}
+.col-md-7 {
+    width: 58.333333%;
+}
+.col-md-8 {
+    width: 66.666667%;
+}
+.col-md-9 {
+    width: 75%;
+}
+.col-md-10 {
+    width: 83.333333%;
+}
+.col-md-11 {
+    width: 91.666667%;
+}
+.col-md-12 {
+    width: 100%;
+}
+/*偏移*/
+.col-md-offset-1 {
+    margin-left: 8.333333%;
+}
+.col-md-offset-2 {
+    margin-left: 16.666667%;
+}
+.col-md-offset-3 {
+    margin-left: 25%;
+}
+.col-md-offset-4 {
+    margin-left: 33.333333%;
+}
+.col-md-offset-5 {
+    margin-left: 41.666665%;
+}
+.col-md-offset-6 {
+    margin-left: 50%;
+}
+.col-md-offset-7 {
+    margin-left: 58.333333%;
+}
+.col-md-offset-8 {
+    margin-left: 66.666667%;
+}
+.col-md-offset-9 {
+    margin-left: 75%;
+}
+.col-md-offset-10 {
+    margin-left: 83.333333%;
+}
+.col-md-offset-11 {
+    margin-left: 91.666667%;
+}
+.col-md-offset-12 {
+    margin-left: 100%;
+}
+.post-title {
+    margin-top: 0;
+    margin-bottom: .25rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.post-meta {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    color: #999;
+}
+.post a {
+    color: #0275d8;
+    text-decoration: none;
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.post ul {
+    padding-left: 2rem;
+}
+.post h2 {
+    font-size: 2rem;
+}
+.post h3 {
+    font-size: 1.75rem;
+}
+.pager {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.pager li {
+    display: inline;
+}
+.pager a {
+    width: 8rem;
+    background-color: #fff;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    border-radius: 2rem;
+    text-align: center;
+    color: #0275d8;
+}
+.pager a:active, .pager a:hover {
+    /*鼠标点击、划过时候定义的样式*/
+    background-color: #eceeef;
+}
+.pager li.disabled a {
+    color: #818a91;
+    background-color: #fff;
+    cursor: not-allowed;
+}
+/*侧边栏*/
+.sidebar-module {
+    /*内边距*/
+    padding: 1rem;
+}
+.sidebar-module h4 {
+    /*关于文字大小、加粗程度、上外边距、下外边距*/
+    margin-top: 0;
+    margin-bottom: .25rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.sidebar-module-inset {
+    /*定义“关于”的背景和圆角样式*/
+    background-color: #f5f5f5;
+    border-radius: .25rem;
+}
+.sidebar-module-inset p {
+    /*上外边距、下外边距、文字大小、行高*/
+    margin-top: 0;
+    margin-bottom: .25em;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+/*侧边栏 档案*/
+.sidebar-module ol {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.25rem;
+}
+.sidebar-module a {
+    color: #0275d8;
+    text-decoration: none;
+    line-height: 1.75rem;
+}
+/*底部样式*/
+.footer {
+    text-align: center;
+    color: #999;
+    /*上下内边距2rem 左右内边距0*/
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    /*上边框 1像素 实线 灰色*/
+    border-top: 1px solid #e5e5e5;
+}
+.footer p {
+    /*上外边距设置为0*/
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.footer a {
+    /*去掉链接下划线*/
+    text-decoration: none;
+    /*链接颜色*/
+    color: #0275d8;
+}
